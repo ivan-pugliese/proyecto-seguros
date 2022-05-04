@@ -1,0 +1,1083 @@
+/*RESETEO*/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}    
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*HEADER GENERAL*/
+
+.header {
+    position: sticky;
+    width: 100%;
+    height: 5rem;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00bfa6;
+}
+
+.header__span {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.header__span:hover {
+    transform: scale(1.1);
+}
+
+.header__nav {
+    margin: 1rem;
+}
+
+.nav__ul__items {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.nav__ul__items:hover {
+    transform: scale(1.1);
+}
+
+
+.nav__ul__items a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.nav__ul__items a:hover {
+    color: #006630;
+}
+
+.header__iconos a {
+    text-decoration: none;
+}
+
+.header__iconos a span {
+    font-size: 1.7rem;
+    margin: 0.3rem;
+    color: #fff;
+}
+
+.jam-menu {
+    display: none;
+}
+
+.nav__bar {
+    text-decoration: none;
+}
+
+.jam-close-circle {
+    display: none;
+}
+
+.nav__ul__items-close {
+    display: none;
+}
+
+.icon__item {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.icon__item:hover {
+    transform: scale(1.2);
+}
+
+/*FOOTER GENERAL*/
+
+.footer {
+    text-align: center;
+    background-color:#00bfa6;
+}
+
+.footer__span {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+}
+
+.footer__logotipo span:hover {
+    transform: scale(1.1);
+}
+
+.footer__iconos {
+    margin-bottom: 0.7rem;
+}
+
+.footer__iconos a {
+    text-decoration: none;
+}
+
+.footer__iconos span {
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 0.2rem;
+}
+
+
+.footer__legales a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.footer__legales a:hover {
+    color:#006630;
+}
+
+.footer__matricula p {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+
+/*PAGINA PRINCIPAL*/
+
+.seguros__generales {
+    width: 100%;
+    background-image: url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    top: -20px;
+    min-height: 100vh;
+}
+
+.seguros__generales__opacidad {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.seguros__generales__titulo {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.seguros__generales__subtitulo {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.seguros__generales__boton button{
+    background-color: #00bfa6;
+    border-radius: 0.50rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.seguros__generales__boton button:hover {
+    transform: scale(1.1);
+}
+
+
+.confianza {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+    
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.confianza__titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.confianza__titulo img {
+    width: 400px;
+    height: auto;
+}
+
+.titulo__principal {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.confianza__texto {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.confianza__imagenes p {
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.seguridad__item {
+    display: flex;
+}
+
+.asesoramiento__item {
+    display: flex;
+}
+
+.cotiza__item {
+    display: flex;
+}
+
+.jam-shield-check-f {
+    color: #00bfa6;
+    font-size: 3rem;
+}
+
+.jam-medal-f {
+    color: #00bfa6;
+    font-size: 3rem;
+}
+
+.jam-pocket-watch-f {
+    color: #00bfa6;
+    font-size: 3rem; 
+}
+
+
+.clientes {
+    background-color: #e6fff7;
+    margin-bottom: 4rem;
+}
+
+
+.clientes__titulo h2 {
+    color: #262626;
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+
+.clientes__testimonios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1);
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.testimonios {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 2rem;
+    width: 80%;
+    height: auto;
+  
+}
+
+.jam-message-alt-writing-f {
+    color: #00bfa6;
+    font-size: 3rem;
+}
+
+.testimonios h4 {
+    font-size: 1rem;
+    color:#00bfa6;
+    text-align: center;
+}
+
+.testimonios p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*PAGINA NOSOTROS*/
+
+.conocenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url(../images/wave-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -40px;
+}
+
+
+.jam-users {
+    color: #00bfa6;
+    font-size: 3rem;
+}
+
+.conocenos__titulo {
+    color: #00bfa6;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.nosotros__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.nosotros__texto h2 {
+    font-size: 2rem;
+}
+
+.nosotros__texto p {
+    width: 80%;
+    text-align: justify; 
+}
+
+
+/*SECCION COTIZAR DE LA PAGINA + PAGINA COTIZAR*/
+
+/*pagina cotizar unicamente*/
+
+.cotizar__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url(../images/wave-haikei.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -40px; 
+}
+
+.cotizar__titulo h1 {
+    color: #00bfa6;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.jam-computer {
+    color: #00bfa6;
+    font-size: 4rem;
+}
+
+/*----------------------*/
+
+
+.formulario__titulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    
+}
+
+.formulario__titulo h2 {
+    color: #262626;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.formulario__titulo p {
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.formulario__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6fff7;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    border: 1px solid #00bfa6;
+    border-radius: 0.50rem;
+}
+.formulario__contacto form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.formulario__contacto form .block {
+    grid-column: 1 / 3;
+}
+
+.formulario__contacto form div {
+    margin: 0;
+    padding: 1rem;
+}
+
+.formulario__contacto form input,
+.formulario__contacto form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #00bfa6;
+}
+
+.formulario__contacto .block select {
+    width: 15rem;
+    height: 2rem;
+    background-color: #e6fff7;
+    border-radius: 0.50rem;
+    border-color: #00bfa6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario__contacto .boton__cotizar {
+    background-color: #00bfa6;
+    border: 0;
+    border-radius: 0.50rem;
+    font-size: 1rem;
+    padding: 1rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.formulario__contacto .boton__cotizar:hover {
+    transform: scale(1.1);
+}    
+
+.formulario__contacto form textarea {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+/*PAGINA DE SERVICIOS*/
+
+.servicios__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("../images/wave-haikei.svg");
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+}
+
+.servicios__titulo h1 {
+    color: #00bfa6;
+    font-size: 3rem;
+    text-align: center;
+}
+    
+.jam-task-list {
+    font-size: 3rem;
+    color: #00bfa6;
+}
+
+.servicios__subtitulo__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servicios__subtitulo__texto h2{
+    color: #262626;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;  
+}
+
+.servicios__subtitulo__texto p {
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.jam-arrow-square-down-f {
+    color:#00bfa6;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    animation-name: flecha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes flecha {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.servicios__imagenes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #e6fff7;
+    width: 100%;
+}    
+
+.servicios__imagenes a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.servicios__imagenes div {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 0.50rem;
+    text-align: center;
+    margin: 2rem;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.servicios__imagenes div:hover {
+    transform: scale(1.1);
+}
+
+.servicios__imagenes div p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+
+.servicios__imagenes div img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.50rem;
+}
+
+
+
+/*PAGINA ASEGURADORAS*/
+
+.seccion__titulo {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/wave-haikei.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.seccion__titulo h1 {
+    color: #00bfa6;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.jam-padlock {
+    font-size: 3rem;
+    color: #00bfa6;
+}
+
+
+
+.aseguradoras__titulo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "ele1 ele1"
+    "ele2 ele3";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.aseguradoras__titulo h2{
+    color: #262626;
+    font-size: 2rem;
+    text-align: center;
+    grid-area: ele1;
+}
+
+.aseguradoras__titulo p {
+    text-align: justify;
+    width: 80%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.parrafo1 {
+    grid-area: ele2;
+}
+
+.parrafo2 {
+    grid-area: ele3;
+}
+
+
+
+.seccion__imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.seccion__imagenes img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.seccion__imagenes img:hover {
+    transform: scale(1.1);
+}
+
+
+/*PAGINA POLITICA Y SEGURIDAD*/
+
+.politica__seguridad__titulo {
+    text-align: center;
+}
+
+.politica__seguridad__titulo h1 {
+    color:#00bfa6;
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+.politica__seguridad__titulo img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.politica__seguridad p {
+    font-size: 1.5rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+/*PAGINA TERMINOS Y CONDICIONES*/
+
+.terminos__condiciones__titulo {
+    text-align: center;
+ }
+ 
+ .terminos__condiciones__titulo h1 {
+     color:#00bfa6;
+     padding: 1rem;
+     font-size: 2.5rem;
+ }
+ 
+ .terminos__condiciones__titulo img {
+     width: 7rem;
+     height: 7rem;
+     border-radius: 50%;
+ }
+ 
+ .terminos__condiciones p {
+     font-size: 1.5rem; 
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 3rem;
+     text-align: justify;
+     
+ }
+
+
+@media screen and (max-width:64.625em) {
+    
+    /*HEADER GENERAL*/
+    .header{
+       justify-content: space-between;
+    }
+
+    .header__span {
+        margin-left: 1rem;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .header__iconos {
+        display: none;
+    }
+
+    .jam-menu {
+        display: block;
+        color: #fff;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    #lateral {
+        display: block;
+        background-color: #00bfa6;
+        width: 80%;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        position: fixed;
+        z-index: 999;
+        top: -100%;
+        right: 0;
+        transition: top 0.7s; 
+    }
+
+    #lateral:target {
+        top: 0;
+    }
+
+
+    .header__nav__ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        margin-right: 1.5rem;
+    }
+
+    .nav__ul__items {
+        display: block;
+        padding: 0.5rem;
+        background-color: #009985;
+        border-radius: 0.50rem;    
+    }
+
+    .jam-close-circle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav__ul__items-close {
+        list-style-type: none;
+    }
+
+    .close__enlace{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav__ul__items-close {
+        display: block;
+    }
+
+
+
+
+    /*PAGINA PRINCIPAL*/
+
+    .confianza {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clientes__testimonios {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .formulario__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .formulario__titulo p {
+        padding: 0 1rem;
+    }
+
+    .formulario__contacto form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formulario__info {
+       width: 100%; 
+    }
+
+    /*PAGINA SOBRE NOSOTROS*/
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*PAGINA SERVICIOS*/
+    .servicios__imagenes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*PAGINA ASEGURADORAS*/
+    .aseguradoras__titulo {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .seccion__imagenes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion__imagenes img {
+        margin: 2rem;
+    }
+
+    /*PAGINA POLITICA Y SEGURIDAD*/ 
+    .politica__seguridad P {
+        width: 100%;
+    }
+
+    /*PAGINA TERMINOS Y CONDICIONES*/
+    .terminos__condiciones p {
+        width: 100%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 40.625em){
+    /*HEADER Y FOOTER GENERAL*/
+    .header__span {
+        font-size: 1.4rem;
+    }
+
+    .jam-shield-check {
+        font-size: 1.4rem;
+    }
+
+    .footer__span {
+        font-size: 1.4rem;
+    }
+
+    .footer__iconos span {
+        font-size: 1.4rem;
+    }
+
+    .footer__legales {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*PAGINA PRINCIPAL*/
+
+    .seguros__generales__titulo {
+        font-size: 1.5rem;
+        
+    }
+    
+    .seguros__generales__subtitulo {
+        font-size: 2rem;
+       
+    }
+
+    .titulo__principal {
+        font-size: 1.7rem;
+    }
+
+    .confianza__texto {
+        font-size: 1rem;
+    }
+
+    .confianza__imagenes p {
+        font-size: 1rem;
+    }
+
+    .clientes__titulo h2 {
+        font-size: 1.7rem;
+    }
+
+    
+    .testimonios h4 {
+    font-size: 0.9rem;
+    }
+
+    .testimonios p {
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    }
+
+    /*PAGINA SOBRE NOSOTROS*/
+
+    .conocenos__titulo {
+        font-size: 1.7rem;
+    }
+
+    .nosotros__texto h2 {
+        font-size: 1.7rem;
+    }
+    .nosotros__texto p {
+        font-size: 1rem;
+    }
+
+
+    /*FORMULARIO COTIZAR*/
+
+    .cotizar__titulo h1 {
+        font-size: 1.7rem;
+    }
+
+    .formulario__titulo h2 {
+        font-size: 1.4rem;
+    }
+    
+    .formulario__titulo p {
+        font-size: 1rem ;
+    }
+
+    .formulario__container {
+        font-size: 0.9rem;
+    }
+    
+
+    /*PAGINA SERVICIOS*/
+
+    .servicios__titulo h1 {
+        font-size: 1.7rem;
+    }
+
+   .servicios__subtitulo__texto h2 {
+       font-size: 1.7rem;
+   }
+
+   .servicios__subtitulo__texto p {
+       font-size: 1rem;
+   }
+
+   .servicios__imagenes div p {
+       font-size: 1rem;
+   }
+
+   /*PAGINA ASEGURADORAS*/
+
+   .seccion__titulo h1 {
+       font-size: 1.7rem;
+   }
+
+   .aseguradoras__titulo h2 {
+       font-size: 1.7rem;
+   }
+
+   .aseguradoras__titulo p {
+       font-size: 1rem;
+   }
+}    

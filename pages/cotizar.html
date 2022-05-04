@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar Seguros</title>
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logotipo">
+           <a href="../index.html"><span class="header__span">Pugliese & Asociados</span></a> 
+        </div>
+
+        <nav id="lateral"class="header__nav">
+            <ul class="header__nav__ul">
+                <li class="nav__ul__items"><a href="../index.html">Inicio</a></li>
+                <li class="nav__ul__items"><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li class="nav__ul__items"><a href="servicios.html">Servicios</a></li>
+                <li class="nav__ul__items"><a href="aseguradoras.html">Aseguradoras</a></li>
+                <li class="nav__ul__items"><a href="cotizar.html">Cotizar</a></li>
+                <li class="nav__ul__items-close"><a href="#close" class="close__enlace"><span class="jam jam-close-circle"></span></a></li>
+            </ul>    
+        </nav>
+
+        <div class="header__iconos">
+            <div class="icon__item">
+                <a href="https://www.facebook.com/puglieseyasociados" target="__blank"><span class="jam jam-facebook-circle"></span></a>
+            </div>
+            <div class="icon__item">
+                <a href="https://www.instagram.com/puglieseasociados/" target="__blank"><span class="jam jam-instagram"></span></a>
+            </div>
+            
+            <div class="icon__item">
+                <a href="#" target="__blank"><span class="jam jam-whatsapp"></span></a>
+            </div> 
+        </div>
+
+        <a href="#lateral" class="nav__bar">
+            <span class="jam jam-menu"></span>
+        </a>
+    </header>   
+    
+
+    <main>
+        <section class="cotizar__titulo">
+            <h1>Cotizá de manera segura, nosotros te asesoramos!</h1>
+            <span class="jam jam-computer"></span>
+        </section>
+        <article class="formulario__titulo">
+            <h2>Cotizá tu Seguro en simples pasos!</h2>
+            <p>Contratá el Seguro que mas se ajuste a tus necesidades, completa el formulario y enseguida te cotizamos.<br><br> 
+            Contactenos también a través de nuestras redes sociales para cualquier consulta!</p>  
+        </article>
+        
+        <article class="formulario__container">
+            <div class="formulario__contacto">
+                <form>
+                    <div>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+    
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+    
+                    <div class="block">
+                        <p>Selecciona tu Seguro:</p>
+                        <select>
+                            <option value="Seguro de vida">Seguro de vida</option>
+                            <option value="Seguro de auto">Seguro de Auto</option>
+                            <option value="Hogar">Hogar</option>
+                            <option value="Comercio">Comercio</option>
+                            <option value="Praxis Médica">Praxis Médica</option>
+                            <option value="Dispositivos Móviles">Dispositivos Móviles</option>
+                        </select>
+                    </div>
+    
+                    <div class="block">
+                        <p>En caso de Seguro de Auto, indicarnos marca, modelo y año:</p>
+                        <textarea name="mensaje" row="3" placeholder="Indique marca, modelo y año de su auto o deja algun comentario."></textarea>
+                    </div>
+                   
+                    <div class="block">
+                        <input class="boton__cotizar" type="submit" value="Cotizar">
+                    </div>                
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logotipo">
+            <a href="../index.html"><span class="footer__span">Pugliese & Asociados</span></a>
+        </div>
+
+        <div class="footer__iconos">
+            <div class="icon__item">
+                <a href="https://www.facebook.com/puglieseyasociados" target="__blank"><span class="jam jam-facebook-circle"></span></a>
+            </div>
+            <div class="icon__item">
+                <a href="https://www.instagram.com/puglieseasociados/" target="__blank"><span class="jam jam-instagram"></span></a>
+            </div>
+            
+            <div class="icon__item">
+                <a href="#" target="__blank"><span class="jam jam-whatsapp"></span></a>
+            </div> 
+        </div>
+
+        <div class="footer__legales">
+            <a href="politica-seguridad.html">Políticas de Seguridad</a>
+            <a href="terminos-condiciones.html">Términos y Condiciones</a>
+        </div>
+      
+
+        <div class="footer__matricula">
+            <p><small>Matricula N°xxx</small></p>
+        </div>
+    </footer>
+</body>
+</html>
