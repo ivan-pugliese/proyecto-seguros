@@ -831,14 +831,14 @@ img {
         margin: 0;
         text-align: center;
         position: fixed;
-        z-index: 998;
-        top: -100%;
-        right: 0;
-        transition: top 0.7s; 
+        z-index: 999;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s; 
     }
 
     #lateral:target {
-        top: 0;
+        right: 0;
     }
 
 
