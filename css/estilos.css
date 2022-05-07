@@ -3,8 +3,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-}    
-
+}
 *,
 *::before,
 *::after {
@@ -14,13 +13,13 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-
 
 
 /*HEADER GENERAL*/
@@ -52,6 +51,14 @@ img {
 
 .header__nav {
     margin: 1rem;
+}
+
+.header__nav__ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 }
 
 .nav__ul__items {
@@ -163,7 +170,7 @@ img {
     display: inline-block;
     color: #fff;
     font-weight: bold;
-    
+    margin-top: 1rem;
 }
 
 
@@ -189,15 +196,19 @@ img {
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
+
+    gap: 1rem;
 }
 
 .seguros__generales__titulo {
     font-size: 2rem;
+    font-weight: bold;
     color: #fff;
 }
 
 .seguros__generales__subtitulo {
     font-size: 3rem;
+    font-weight: bold;
     color: #fff;
 }
 
@@ -245,30 +256,45 @@ img {
 
 .titulo__principal {
     font-size: 2rem;
+    color: #00bfa6;
+    font-weight: bold;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .confianza__texto {
     width: 100%;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .confianza__imagenes p {
-    font-size: 1.2rem;
-    width: 50%;
+    font-size: 1rem;
+    width: 70%; 
 }
 
 .seguridad__item {
     display: flex;
 }
 
+.seguridad__item h4 {
+    margin-top: 1rem;
+}
+
 .asesoramiento__item {
     display: flex;
 }
 
+.asesoramiento__item h4 {
+    margin-top: 1rem;
+}
+
 .cotiza__item {
     display: flex;
+}
+
+.cotiza__item h4 {
+    margin-top: 1rem;
 }
 
 .jam-shield-check-f {
@@ -294,8 +320,9 @@ img {
 
 
 .clientes__titulo h2 {
-    color: #262626;
+    color: #00bfa6;
     font-size: 2rem;
+    font-weight: bold;
     padding-top: 4rem;
     text-align: center;
 }
@@ -333,6 +360,7 @@ img {
 
 .testimonios h4 {
     font-size: 1rem;
+    font-weight: bold;
     color:#00bfa6;
     text-align: center;
 }
@@ -370,35 +398,33 @@ img {
 .conocenos__titulo {
     color: #00bfa6;
     font-size: 3rem;
+    font-weight: bold;
     text-align: center;
 }
 
-.nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-
-.nosotros__texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.nosotros__texto h2 {
+.nosotros h2 {
+    color: #00bfa6;
     font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+    text-align: center;
 }
 
-.nosotros__texto p {
-    width: 80%;
-    text-align: justify; 
+.nosotros p {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    margin: 2rem auto;
 }
+
+.nosotros img {
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.50rem;
+    padding-bottom: 3rem;
+}
+
 
 
 /*SECCION COTIZAR DE LA PAGINA + PAGINA COTIZAR*/
@@ -423,6 +449,7 @@ img {
 .cotizar__titulo h1 {
     color: #00bfa6;
     font-size: 3rem;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -432,7 +459,6 @@ img {
 }
 
 /*----------------------*/
-
 
 .formulario__titulo {
     width: 100%;
@@ -446,13 +472,16 @@ img {
 }
 
 .formulario__titulo h2 {
-    color: #262626;
+    color: #00bfa6;
     font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
 .formulario__titulo p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1;
     margin-bottom: 3rem;
 }
@@ -468,66 +497,31 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    border: 1px solid #00bfa6;
     border-radius: 0.50rem;
-}
-.formulario__contacto form {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
 
-.formulario__contacto form .block {
-    grid-column: 1 / 3;
-}
-
-.formulario__contacto form div {
-    margin: 0;
     padding: 1rem;
 }
 
-.formulario__contacto form input,
-.formulario__contacto form textarea {
-    width: 100%;
-    padding: 0.7rem;
-    border: none;
-    background: none;
-    outline: 0;
-    border-bottom: 1px solid #00bfa6;
-}
-
-.formulario__contacto .block select {
-    width: 15rem;
-    height: 2rem;
-    background-color: #e6fff7;
+.formulario__seleccion__seguros {
     border-radius: 0.50rem;
     border-color: #00bfa6;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
     cursor: pointer;
 }
 
-.formulario__contacto .boton__cotizar {
+.boton__cotizar {
     background-color: #00bfa6;
     border: 0;
     border-radius: 0.50rem;
-    font-size: 1rem;
-    padding: 1rem;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
-.formulario__contacto .boton__cotizar:hover {
+.boton__cotizar:hover {
     transform: scale(1.1);
 }    
-
-.formulario__contacto form textarea {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
-
-
 
 
 /*PAGINA DE SERVICIOS*/
@@ -550,6 +544,7 @@ img {
 .servicios__titulo h1 {
     color: #00bfa6;
     font-size: 3rem;
+    font-weight: bold;
     text-align: center;
 }
     
@@ -567,7 +562,7 @@ img {
 }
 
 .servicios__subtitulo__texto h2{
-    color: #262626;
+    color: #00bfa6;
     font-size: 2rem;
     text-align: center;
     margin-top: 3rem;  
@@ -575,7 +570,7 @@ img {
 
 .servicios__subtitulo__texto p {
     width: 70%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -608,7 +603,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 
     justify-content: center;
     justify-items: center;
@@ -623,7 +618,7 @@ img {
     color: #262626;
 }
 
-.servicios__imagenes div {
+.servicios__imagenes .card {
     width: 80%;
     background-color: #fff;
     border-radius: 0.50rem;
@@ -633,13 +628,13 @@ img {
     cursor: pointer;
 }
 
-.servicios__imagenes div:hover {
+.servicios__imagenes .card:hover {
     transform: scale(1.1);
 }
 
 .servicios__imagenes div p {
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -672,6 +667,7 @@ img {
 .seccion__titulo h1 {
     color: #00bfa6;
     font-size: 3rem;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -695,8 +691,9 @@ img {
 }
 
 .aseguradoras__titulo h2{
-    color: #262626;
+    color: #00bfa6;
     font-size: 2rem;
+    font-weight: bold;
     text-align: center;
     grid-area: ele1;
 }
@@ -704,7 +701,7 @@ img {
 .aseguradoras__titulo p {
     text-align: justify;
     width: 80%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -715,8 +712,6 @@ img {
 .parrafo2 {
     grid-area: ele3;
 }
-
-
 
 .seccion__imagenes {
     display: grid;
@@ -742,6 +737,28 @@ img {
 }
 
 
+.container__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+
+
+.btn {
+    color: #fff;
+    font-weight: bold;
+    background-color: #00bfa6;
+    transition: transform 0.2s;
+}
+
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 /*PAGINA POLITICA Y SEGURIDAD*/
 
 .politica__seguridad__titulo {
@@ -751,7 +768,7 @@ img {
 .politica__seguridad__titulo h1 {
     color:#00bfa6;
     padding: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 .politica__seguridad__titulo img {
@@ -761,7 +778,7 @@ img {
 }
 
 .politica__seguridad p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -777,7 +794,7 @@ img {
  .terminos__condiciones__titulo h1 {
      color:#00bfa6;
      padding: 1rem;
-     font-size: 2.5rem;
+     font-size: 2.3rem;
  }
  
  .terminos__condiciones__titulo img {
@@ -787,7 +804,7 @@ img {
  }
  
  .terminos__condiciones p {
-     font-size: 1.5rem; 
+     font-size: 1.3rem; 
      width: 60%;
      margin-left: auto;
      margin-right: auto;
@@ -795,6 +812,7 @@ img {
      text-align: justify;
      
  }
+
 
 
 @media screen and (max-width:64.625em) {
@@ -920,6 +938,7 @@ img {
         flex-direction: column;
     }
     
+    
     /*PAGINA SERVICIOS*/
     .servicios__imagenes {
         display: flex;
@@ -965,6 +984,16 @@ img {
         font-size: 1.4rem;
     }
 
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
     .footer__span {
         font-size: 1.4rem;
     }
@@ -976,6 +1005,10 @@ img {
     .footer__legales {
         display: flex;
         flex-direction: column;
+    }
+
+    .footer__legales a {
+        padding: 0.5rem;
     }
 
     /*PAGINA PRINCIPAL*/
@@ -1024,9 +1057,11 @@ img {
 
     .nosotros__texto h2 {
         font-size: 1.7rem;
+        text-align: center;
     }
     .nosotros__texto p {
         font-size: 1rem;
+
     }
 
 
