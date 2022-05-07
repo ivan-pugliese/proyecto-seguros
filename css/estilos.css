@@ -873,6 +873,7 @@ img {
     .nav__ul__items {
         display: block;
         padding: 0.5rem;
+        margin-left: 1rem;
         background-color: #009985;
         border-radius: 0.50rem;    
     }
@@ -1110,9 +1111,11 @@ img {
 
    .aseguradoras__titulo h2 {
        font-size: 1.7rem;
+       margin-top: 2rem;
    }
 
    .aseguradoras__titulo p {
        font-size: 1rem;
+       margin-top: 1rem;
    }
 }    
