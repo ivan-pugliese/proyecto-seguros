@@ -1,0 +1,27 @@
+/*RESETEO*/
+html {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=reset.css.map */

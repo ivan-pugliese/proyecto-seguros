@@ -1,0 +1,253 @@
+.seguros__generales {
+  width: 100%;
+  background-image: url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: -20px;
+  min-height: 100vh;
+}
+
+.seguros__generales__opacidad {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  gap: 1rem;
+}
+
+.seguros__generales__titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.seguros__generales__subtitulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.seguros__generales__boton button {
+  background-color: #00bfa6;
+  border-radius: 0.50rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.seguros__generales__boton button:hover {
+  transform: scale(1.1);
+}
+
+.confianza {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.confianza__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.confianza__titulo img {
+  width: 400px;
+  height: auto;
+}
+
+.titulo__principal {
+  font-size: 2rem;
+  color: #00bfa6;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.confianza__texto {
+  width: 100%;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.confianza__imagenes p {
+  font-size: 1rem;
+  width: 70%;
+}
+
+.seguridad__item {
+  display: flex;
+}
+
+.seguridad__item h4 {
+  margin-top: 1rem;
+}
+
+.asesoramiento__item {
+  display: flex;
+}
+
+.asesoramiento__item h4 {
+  margin-top: 1rem;
+}
+
+.cotiza__item {
+  display: flex;
+}
+
+.cotiza__item h4 {
+  margin-top: 1rem;
+}
+
+.jam-shield-check-f {
+  color: #00bfa6;
+  font-size: 3rem;
+}
+
+.jam-medal-f {
+  color: #00bfa6;
+  font-size: 3rem;
+}
+
+.jam-pocket-watch-f {
+  color: #00bfa6;
+  font-size: 3rem;
+}
+
+.clientes {
+  background-color: #e6fff7;
+  margin-bottom: 4rem;
+}
+
+.clientes__titulo h2 {
+  color: #00bfa6;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.clientes__testimonios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.testimonios {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 80%;
+  height: auto;
+}
+
+.jam-message-alt-writing-f {
+  color: #00bfa6;
+  font-size: 3rem;
+}
+
+.testimonios h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00bfa6;
+  text-align: center;
+}
+
+.testimonios p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formulario__titulo {
+  max-width: 960px;
+  min-width: 280px;
+  margin: 3rem auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.formulario__titulo h2 {
+  color: #00bfa6;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.formulario__titulo p {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: justify;
+}
+
+.formulario__titulo img {
+  width: 400px;
+  height: 400px;
+}
+
+.formulario__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6fff7;
+  font-weight: bold;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  border-radius: 0.50rem;
+  padding: 1rem;
+}
+
+.formulario__seleccion__seguros {
+  border-radius: 0.50rem;
+  border-color: #00bfa6;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.boton__cotizar {
+  background-color: #00bfa6;
+  border: 0;
+  border-radius: 0.50rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.boton__cotizar:hover {
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=pagina-principal.css.map */

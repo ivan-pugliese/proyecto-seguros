@@ -1,0 +1,98 @@
+.seccion__titulo {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/wave-haikei.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.seccion__titulo .seccion__titulo h1 {
+  color: #00bfa6;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.seccion__titulo .jam-padlock {
+  font-size: 3rem;
+  color: #00bfa6;
+}
+
+.aseguradoras__titulo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "ele1 ele1" "ele2 ele3";
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.aseguradoras__titulo .aseguradoras__titulo h2 {
+  color: #00bfa6;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  grid-area: ele1;
+}
+
+.aseguradoras__titulo .aseguradoras__titulo p {
+  text-align: justify;
+  width: 80%;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.aseguradoras__titulo .parrafo1 {
+  grid-area: ele2;
+}
+
+.aseguradoras__titulo .parrafo2 {
+  grid-area: ele3;
+}
+
+.seccion__imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.seccion__imagenes .seccion__imagenes img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.seccion__imagenes .seccion__imagenes img:hover {
+  transform: scale(1.1);
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container__button .btn {
+  color: #fff;
+  font-weight: bold;
+  background-color: #00bfa6;
+  transition: transform 0.2s;
+}
+
+.container__button .btn:hover {
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=pagina-aseguradoras.css.map */
