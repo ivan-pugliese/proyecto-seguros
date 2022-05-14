@@ -1,0 +1,124 @@
+/*PAGINA DE SERVICIOS*/
+  
+.servicios__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    background-image: url("../images/wave-haikei.svg");
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+
+    & h1 {
+      color: $color-principal;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+      
+    .jam-task-list {
+      font-size: 3rem;
+      color: $color-principal;
+    }
+    
+  }
+  
+  
+  .servicios__subtitulo__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h2{
+      color: $color-principal;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 3rem;  
+    }
+    
+    & p {
+      width: 70%;
+      font-size: 1rem;
+      text-align: justify;
+    }
+  }
+  
+  .jam-arrow-square-down-f {
+    color:$color-principal;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    animation-name: flecha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  @keyframes flecha {
+    0% {
+        transform: scale(1);
+    }
+  
+    50% {
+        transform: scale(1.2);
+    }
+  
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  
+  .servicios__imagenes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1.5rem;
+  
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: $color-secundario;
+    width: 100%;
+
+    & a {
+      text-decoration: none;
+      color: #262626;
+    }
+    
+    & .card {
+      width: 80%;
+      background-color: #fff;
+      border-radius: 0.50rem;
+      text-align: center;
+      margin: 2rem;
+      transition: transform 0.5s;
+      cursor: pointer;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    
+   
+    & div p {
+      text-align: justify;
+      font-size: 1rem;
+    }
+    
+    
+    & div img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.50rem;
+
+  }    
+  
+} 

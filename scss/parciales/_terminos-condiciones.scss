@@ -1,0 +1,27 @@
+ /*PAGINA TERMINOS Y CONDICIONES*/
+  
+ .terminos__condiciones__titulo {
+    text-align: center;
+
+    & h1 {
+      color:$color-principal;
+      padding: 1rem;
+      font-size: 2.3rem;
+   }
+   
+   & img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+   }
+  }
+  
+  .terminos__condiciones p {
+     font-size: 1.3rem; 
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 3rem;
+     text-align: justify;
+     
+  }

@@ -21,10 +21,6 @@ img {
   height: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
 /*HEADER GENERAL*/
 .header {
   position: sticky;
@@ -51,6 +47,25 @@ a {
   transform: scale(1.1);
 }
 
+.header__iconos a {
+  text-decoration: none;
+}
+
+.header__iconos a span {
+  font-size: 1.7rem;
+  margin: 0.3rem;
+  color: #fff;
+}
+
+.header .icon__item {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.header .icon__item:hover {
+  transform: scale(1.2);
+}
+
 .header__nav {
   margin: 1rem;
 }
@@ -63,16 +78,16 @@ a {
   padding-inline-start: 0;
 }
 
-.nav__ul__items {
+.header__nav .nav__ul__items {
   display: inline-block;
   transition: transform 0.2s;
 }
 
-.nav__ul__items:hover {
+.header__nav .nav__ul__items:hover {
   transform: scale(1.1);
 }
 
-.nav__ul__items a {
+.header__nav .nav__ul__items a {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -80,21 +95,11 @@ a {
   padding: 0.5rem;
 }
 
-.nav__ul__items a:hover {
+.header__nav .nav__ul__items a:hover {
   color: #006630;
 }
 
-.header__iconos a {
-  text-decoration: none;
-}
-
-.header__iconos a span {
-  font-size: 1.7rem;
-  margin: 0.3rem;
-  color: #fff;
-}
-
-.jam-menu {
+.nav__ul__items-close {
   display: none;
 }
 
@@ -102,21 +107,12 @@ a {
   text-decoration: none;
 }
 
+.jam-menu {
+  display: none;
+}
+
 .jam-close-circle {
   display: none;
-}
-
-.nav__ul__items-close {
-  display: none;
-}
-
-.icon__item {
-  display: inline-block;
-  transition: transform 0.2s;
-}
-
-.icon__item:hover {
-  transform: scale(1.2);
 }
 
 /*FOOTER GENERAL*/
@@ -170,6 +166,15 @@ a {
   color: #fff;
   font-weight: bold;
   margin-top: 1rem;
+}
+
+.footer .icon__item {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.footer .icon__item:hover {
+  transform: scale(1.2);
 }
 
 /*PAGINA PRINCIPAL*/
@@ -235,7 +240,7 @@ a {
   margin: 1rem;
 }
 
-.confianza__titulo {
+.confianza .confianza__titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,7 +248,7 @@ a {
   text-align: center;
 }
 
-.confianza__titulo img {
+.confianza .confianza__titulo img {
   width: 400px;
   height: auto;
 }
@@ -340,11 +345,6 @@ a {
   height: auto;
 }
 
-.jam-message-alt-writing-f {
-  color: #00bfa6;
-  font-size: 3rem;
-}
-
 .testimonios h4 {
   font-size: 1rem;
   font-weight: bold;
@@ -356,6 +356,72 @@ a {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
+}
+
+.jam-message-alt-writing-f {
+  color: #00bfa6;
+  font-size: 3rem;
+}
+
+.formulario__titulo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.formulario__titulo h2 {
+  color: #00bfa6;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.formulario__titulo p {
+  font-size: 1rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.formulario__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6fff7;
+  font-weight: bold;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  border-radius: 0.50rem;
+  padding: 1rem;
+}
+
+.formulario__seleccion__seguros {
+  border-radius: 0.50rem;
+  border-color: #00bfa6;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.boton__cotizar {
+  background-color: #00bfa6;
+  border: 0;
+  border-radius: 0.50rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.boton__cotizar:hover {
+  transform: scale(1.1);
 }
 
 /*PAGINA NOSOTROS*/
@@ -408,8 +474,68 @@ a {
   padding-bottom: 3rem;
 }
 
+.formulario__titulo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.formulario__titulo h2 {
+  color: #00bfa6;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.formulario__titulo p {
+  font-size: 1rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.formulario__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6fff7;
+  font-weight: bold;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  border-radius: 0.50rem;
+  padding: 1rem;
+}
+
+.formulario__seleccion__seguros {
+  border-radius: 0.50rem;
+  border-color: #00bfa6;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.boton__cotizar {
+  background-color: #00bfa6;
+  border: 0;
+  border-radius: 0.50rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.boton__cotizar:hover {
+  transform: scale(1.1);
+}
+
 /*SECCION COTIZAR DE LA PAGINA + PAGINA COTIZAR*/
-/*pagina cotizar unicamente*/
 .cotizar__titulo {
   display: flex;
   justify-content: center;
@@ -431,22 +557,19 @@ a {
   text-align: center;
 }
 
-.jam-computer {
+.cotizar__titulo .jam-computer {
   color: #00bfa6;
   font-size: 4rem;
 }
 
-/*----------------------*/
 .formulario__titulo {
-  max-width: 960px;
-  min-width: 280px;
-  margin: 3rem auto;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
 }
 
 .formulario__titulo h2 {
@@ -461,12 +584,7 @@ a {
 .formulario__titulo p {
   font-size: 1rem;
   line-height: 1;
-  text-align: justify;
-}
-
-.formulario__titulo img {
-  width: 400px;
-  height: 400px;
+  margin-bottom: 3rem;
 }
 
 .formulario__container {
@@ -527,7 +645,7 @@ a {
   text-align: center;
 }
 
-.jam-task-list {
+.servicios__titulo .jam-task-list {
   font-size: 3rem;
   color: #00bfa6;
 }
@@ -549,7 +667,7 @@ a {
 
 .servicios__subtitulo__texto p {
   width: 70%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
@@ -639,7 +757,7 @@ a {
   text-align: center;
 }
 
-.jam-padlock {
+.seccion__titulo .jam-padlock {
   font-size: 3rem;
   color: #00bfa6;
 }
@@ -669,11 +787,11 @@ a {
   margin-bottom: 2rem;
 }
 
-.parrafo1 {
+.aseguradoras__titulo .parrafo1 {
   grid-area: ele2;
 }
 
-.parrafo2 {
+.aseguradoras__titulo .parrafo2 {
   grid-area: ele3;
 }
 
@@ -705,14 +823,14 @@ a {
   margin-bottom: 2rem;
 }
 
-.btn {
+.container__button .btn {
   color: #fff;
   font-weight: bold;
   background-color: #00bfa6;
   transition: transform 0.2s;
 }
 
-.btn:hover {
+.container__button .btn:hover {
   transform: scale(1.1);
 }
 
@@ -775,10 +893,10 @@ a {
   .header__span {
     margin-left: 1rem;
   }
-  nav {
+  .header__iconos {
     display: none;
   }
-  .header__iconos {
+  nav {
     display: none;
   }
   .jam-menu {
@@ -819,20 +937,20 @@ a {
     background-color: #009985;
     border-radius: 0.50rem;
   }
+  .nav__ul__items-close {
+    list-style-type: none;
+  }
+  .nav__ul__items-close {
+    display: block;
+  }
   .jam-close-circle {
     display: block;
     font-size: 2rem;
     cursor: pointer;
   }
-  .nav__ul__items-close {
-    list-style-type: none;
-  }
   .close__enlace {
     text-decoration: none;
     color: #fff;
-  }
-  .nav__ul__items-close {
-    display: block;
   }
   /*PAGINA PRINCIPAL*/
   .confianza {
@@ -867,9 +985,6 @@ a {
   .servicios__imagenes {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
   }
   /*PAGINA ASEGURADORAS*/
   .aseguradoras__titulo {
