@@ -190,7 +190,7 @@ img {
   min-height: 100vh;
 }
 
-.seguros__generales .seguros__generales__opacidad {
+.seguros__generales__opacidad {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -231,14 +231,19 @@ img {
 }
 
 .confianza {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  gap: 4rem;
-  padding: 1rem;
-  margin: 1rem;
+  max-width: 960px;
+  min-width: 280px;
+  max-height: 700px;
+  min-height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .confianza .confianza__titulo {
@@ -249,12 +254,11 @@ img {
   text-align: center;
 }
 
-.confianza .confianza__titulo img {
-  width: 400px;
-  height: auto;
+.confianza .confianza__titulo .titulo__up {
+  text-align: center;
 }
 
-.titulo__principal {
+.confianza .confianza__titulo h2 {
   font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   color: #00bfa6;
   font-weight: bold;
@@ -262,58 +266,19 @@ img {
   margin-bottom: 1rem;
 }
 
-.confianza__texto {
+.confianza .confianza__titulo p {
   width: 100%;
   text-align: left;
   font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
+  padding: 1rem;
 }
 
-.confianza__imagenes p {
-  font-size: 1rem;
-  width: 70%;
-}
-
-.seguridad__item {
-  display: flex;
-}
-
-.seguridad__item h4 {
-  margin-top: 1rem;
-}
-
-.asesoramiento__item {
-  display: flex;
-}
-
-.asesoramiento__item h4 {
-  margin-top: 1rem;
-}
-
-.cotiza__item {
-  display: flex;
-}
-
-.cotiza__item h4 {
-  margin-top: 1rem;
-}
-
-.jam-shield-check-f {
-  color: #00bfa6;
-  font-size: 3rem;
-}
-
-.jam-medal-f {
-  color: #00bfa6;
-  font-size: 3rem;
-}
-
-.jam-pocket-watch-f {
-  color: #00bfa6;
-  font-size: 3rem;
+.confianza .confianza__titulo img {
+  width: 400px;
+  height: auto;
 }
 
 .clientes {
-  background-color: #e6fff7;
   margin-bottom: 4rem;
 }
 
@@ -339,7 +304,8 @@ img {
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  background-color: #fff;
+  background-color: #e6fff7;
+  border: 1px solid #00bfa6;
   border-radius: 1rem;
   margin: 2rem;
   width: 80%;
@@ -355,73 +321,40 @@ img {
 
 .testimonios p {
   font-size: 1rem;
-  font-weight: bold;
   text-align: center;
+  padding-top: 1rem;
 }
 
-.jam-message-alt-writing-f {
-  color: #00bfa6;
-  font-size: 3rem;
-}
-
-.formulario__titulo {
-  width: 100%;
-  height: auto;
+.destacamos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.formulario__titulo h2 {
-  color: #00bfa6;
-  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
-  font-weight: bold;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.formulario__titulo p {
-  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
-  text-align: left;
-}
-
-.formulario__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-color: #e6fff7;
+}
+
+.destacamos h2 {
+  color: #00bfa6;
   font-weight: bold;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3rem;
-  border-radius: 0.50rem;
-  padding: 1rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
-.formulario__seleccion__seguros {
-  border-radius: 0.50rem;
-  border-color: #00bfa6;
-  font-family: 'Raleway', sans-serif;
-  cursor: pointer;
-}
-
-.boton__cotizar {
-  background-color: #00bfa6;
-  border: 0;
-  border-radius: 0.50rem;
-  color: #fff;
+.col h4 {
+  color: #00bfa6;
   font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s;
+  margin: 2rem;
 }
 
-.boton__cotizar:hover {
-  transform: scale(1.1);
+.col p {
+  margin-bottom: 8rem;
+}
+
+.jam {
+  color: #00bfa6;
+  font-size: 3rem;
 }
 
 /*PAGINA NOSOTROS*/
@@ -455,23 +388,72 @@ img {
   color: #00bfa6;
   font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   font-weight: bold;
-  margin: 2rem auto;
+  margin-top: 4rem;
   text-align: center;
 }
 
 .nosotros p {
   width: 100%;
   font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
-  margin-bottom: 1.5rem;
+  margin-top: 3rem;
   text-align: left;
-  margin: 2rem auto;
 }
 
 .nosotros img {
-  height: 100%;
+  width: 500px;
   object-fit: contain;
   border-radius: 0.50rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.bg-color-secundario {
+  padding-top: 6rem;
+  background-color: #e6fff7;
+}
+
+.poliza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+  gap: 6rem;
+  padding: 1rem;
+  background-color: #e6fff7;
+}
+
+.poliza img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.poliza h3 {
+  color: #00bfa6;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  font-size: clamp(1.58rem, calc(1.47rem + 0.55vw), 1.88rem);
+  text-align: center;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+  gap: 6rem;
+}
+
+.redes-sociales h3 {
+  color: #00bfa6;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  font-size: clamp(1.58rem, calc(1.47rem + 0.55vw), 1.88rem);
+  text-align: center;
+}
+
+.redes-sociales img {
+  width: 400px;
+  border-radius: 50%;
 }
 
 .cotizar__titulo {
@@ -500,6 +482,18 @@ img {
   font-size: 4rem;
 }
 
+.container__form-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__form-img img {
+  width: 600px;
+  height: 600px;
+  padding-left: 3rem;
+}
+
 .formulario__titulo {
   width: 100%;
   height: auto;
@@ -508,20 +502,23 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .formulario__titulo h2 {
   color: #00bfa6;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 1.5rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
+  font-weight: bold;
   text-align: center;
 }
 
 .formulario__titulo p {
   font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
   text-align: left;
+  padding-bottom: 1rem;
 }
 
 .formulario__container {
@@ -529,14 +526,13 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #e6fff7;
   font-weight: bold;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
   border-radius: 0.50rem;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .formulario__seleccion__seguros {
@@ -558,6 +554,10 @@ img {
 
 .boton__cotizar:hover {
   transform: scale(1.1);
+}
+
+.form-control {
+  background-color: #e6fff7;
 }
 
 /*PAGINA DE SERVICIOS*/
@@ -588,30 +588,32 @@ img {
 }
 
 .servicios__subtitulo__texto {
-  max-width: 960px;
-  min-width: 280px;
-  max-height: 480px;
-  min-height: 280px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  text-align: center;
+  max-width: 960px;
+  min-width: 280px;
+  max-height: 700px;
+  min-height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .servicios__subtitulo__texto h2 {
   color: #00bfa6;
   font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   text-align: center;
-  margin-top: 3rem;
 }
 
 .servicios__subtitulo__texto p {
-  padding: 0 1rem;
-  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
+  width: 100%;
   text-align: left;
+  font-size: clamp(1.09rem, calc(1.06rem + 0.19vw), 1.2rem);
+  padding: 0 1rem;
 }
 
 .jam-arrow-square-down-f {
@@ -636,29 +638,27 @@ img {
 }
 
 .servicios__imagenes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  justify-items: center;
   align-items: center;
-  text-align: center;
-  background-color: #e6fff7;
-  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
 }
 
 .servicios__imagenes a {
   text-decoration: none;
-  color: #262626;
 }
 
 .servicios__imagenes .card {
-  width: 80%;
-  background-color: #fff;
+  max-width: 350px;
+  background-color: #e6fff7;
   border-radius: 0.50rem;
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
+  border: 1px solid #00bfa6;
   transition: transform 0.5s;
   cursor: pointer;
 }
@@ -667,14 +667,22 @@ img {
   transform: scale(1.1);
 }
 
+.servicios__imagenes div h4 {
+  font-size: clamp(1.31rem, calc(1.24rem + 0.34vw), 1.5rem);
+  color: #00bfa6;
+  font-weight: bold;
+}
+
 .servicios__imagenes div p {
+  color: #1C1C1C;
   text-align: left;
   font-size: clamp(0.91rem, calc(0.89rem + 0.09vw), 0.96rem);
+  padding: 0 1rem;
 }
 
 .servicios__imagenes div img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 0.50rem;
 }
 
@@ -724,8 +732,9 @@ img {
 }
 
 .aseguradoras__titulo p {
-  text-align: left;
-  width: 80%;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
   font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
   margin-bottom: 2rem;
 }
@@ -738,25 +747,56 @@ img {
   grid-area: ele3;
 }
 
-.seccion__imagenes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
+.aseguradoras__imagenes {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  background-color: #e6fff7;
 }
 
-.seccion__imagenes img {
-  width: 200px;
-  height: auto;
-  transition: transform 0.2s;
+.aseguradoras__imagenes a {
+  text-decoration: none;
 }
 
-.seccion__imagenes img:hover {
+.aseguradoras__imagenes .card {
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 0.50rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #00bfa6;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.aseguradoras__imagenes .card:hover {
   transform: scale(1.1);
+}
+
+.aseguradoras__imagenes div h4 {
+  font-size: clamp(1.31rem, calc(1.24rem + 0.34vw), 1.5rem);
+  color: #00bfa6;
+  font-weight: bold;
+}
+
+.aseguradoras__imagenes div p {
+  color: #1C1C1C;
+  text-align: left;
+  font-size: clamp(0.91rem, calc(0.89rem + 0.09vw), 0.96rem);
+  padding: 0 1rem;
+}
+
+.aseguradoras__imagenes div img {
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  border-radius: 0.50rem;
 }
 
 .container__button {
@@ -925,6 +965,12 @@ img {
     display: flex;
     flex-direction: column;
   }
+  .poliza {
+    flex-direction: column;
+  }
+  .redes-sociales {
+    flex-direction: column;
+  }
   /*PAGINA SERVICIOS*/
   .servicios__imagenes {
     display: flex;
@@ -941,6 +987,14 @@ img {
   }
   .seccion__imagenes img {
     margin: 2rem;
+  }
+  /*PAGINA COTIZAR*/
+  .container__form-img {
+    flex-direction: column;
+  }
+  .container__form-img img {
+    margin: 0;
+    padding: 0;
   }
   /*PAGINA POLITICA Y SEGURIDAD*/
   .politica__seguridad P {

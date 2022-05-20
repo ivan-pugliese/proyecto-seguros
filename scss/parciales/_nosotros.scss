@@ -1,4 +1,4 @@
-  /*PAGINA NOSOTROS*/
+  /*PAGINA NOSOTROS*/ 
   .conocenos {
     display: flex;
     justify-content: center;
@@ -24,26 +24,79 @@
       font-size: 3rem;
     }
   }
-    
+  
+
   .nosotros h2 {
     color: $color-principal;
     font-size: $step-2;
     font-weight: bold;
-    margin: 2rem auto;
+    margin-top: 4rem;
     text-align: center;
   }
   
   .nosotros p {
     width: 100%;
     font-size: $fluid-1;
-    margin-bottom: 1.5rem;
+    margin-top: 3rem;
     text-align: left;
-    margin: 2rem auto;
   }
   
   .nosotros img {
-    height: 100%;
+    width: 500px;
     object-fit: contain;
     border-radius: 0.50rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
   }
+
+  .bg-color-secundario {
+    padding-top: 6rem;
+    background-color: $color-secundario;
+  }
+
+
+  .poliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+    gap: 6rem;
+    padding: 1rem;
+    background-color: $color-secundario;
+
+    & img {
+      width: 250px;
+      border-radius: 50%;
+    }
+
+    & h3 {
+      color: $color-principal;
+      font-weight: bold;
+      padding-bottom: 1rem;
+      font-size: $step-1;
+      text-align: center;
+    }
+  }
+
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+    gap: 6rem;
+
+    & h3 {
+      color: $color-principal;
+      font-weight: bold;
+      padding-bottom: 1rem;
+      font-size: $step-1;
+      text-align: center;
+    }
+
+    & img {
+      width: 400px;
+      border-radius: 50%;
+    }
+  }
+
+  

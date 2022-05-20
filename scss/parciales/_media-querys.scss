@@ -104,6 +104,14 @@
       flex-direction: column;
     }
 
+    .poliza {
+      flex-direction: column;
+    }
+
+    .redes-sociales {
+      flex-direction: column;
+    }
+
     /*PAGINA SERVICIOS*/
     .servicios__imagenes {
       display: flex;
@@ -124,6 +132,16 @@
       margin: 2rem;
     }
 
+
+    /*PAGINA COTIZAR*/
+    .container__form-img {
+      flex-direction: column;
+
+      & img {
+        margin: 0;
+        padding: 0;
+      }
+    }
 
     /*PAGINA POLITICA Y SEGURIDAD*/
     .politica__seguridad P {

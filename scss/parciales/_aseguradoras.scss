@@ -44,8 +44,9 @@
     }
     
     & p {
-      text-align: left;
-      width: 80%;
+      text-align: center;
+      width: 100%;
+      padding: 1rem;
       font-size: $fluid-1;
       margin-bottom: 2rem;
     }
@@ -59,27 +60,60 @@
     }
   }
   
-  .seccion__imagenes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-
-    & img {
-      width: 200px;
-      height: auto;
-      transition: transform 0.2s;
+ 
+  .aseguradoras__imagenes {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem;
+      background-color: $color-secundario;
+    
   
-      &:hover {
-        transform: scale(1.1);
+      & a {
+        text-decoration: none;
+      }
+      
+      & .card {
+        max-width: 350px;
+        background-color: #fff;
+        border-radius: 0.50rem;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid $color-principal;
+        transition: transform 0.5s;
+        cursor: pointer;
+    
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      & div h4 {
+        font-size: $step-0;
+        color: $color-principal;
+        font-weight: bold;
+      }
+  
+      & div p {
+        color: #1C1C1C;
+        text-align: left;
+        font-size: $step--2;
+        padding: 0 1rem;
+      }
+      
+      & div img {
+        width: 100%;
+        object-fit: contain;
+        height: 300px;
+        border-radius: 0.50rem;
       }
     }
-  }
-  
+
   .container__button {
     display: flex;
     justify-content: center;
