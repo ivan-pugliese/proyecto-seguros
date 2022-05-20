@@ -1,4 +1,4 @@
- /*HEADER GENERAL*/
+/*HEADER GENERAL*/
 
 .header {
     position: sticky;
@@ -18,93 +18,79 @@
       text-decoration: underline;
       font-weight: bold;
       transition: transform 0.2s;
-
+  
       &:hover {
         transform: scale(1.1);
-      }
-    }
-    
-  
-    &__iconos a {
-      text-decoration: none;
-    }
-    
-    &__iconos a span {
-      font-size: 1.7rem;
-      margin: 0.3rem;
-      color: #fff;
-    }
-
-    .icon__item {
-      display: inline-block;
-      transition: transform 0.2s;
-
-      &:hover {
-        transform: scale(1.2);
-      }
+      } 
     }
   }
   
+  .header__iconos a {
+    text-decoration: none;
+  }
+  
+  .header__iconos a span {
+    font-size: 1.7rem;
+    margin: 0.3rem;
+    color: #fff;
+  }
+  
+  .header .icon__item {
+    display: inline-block;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  
+
   .header__nav {
     margin: 1rem;
-
-    &__ul {
-      margin-bottom: 0;
-      padding-left: 0;
-      margin-block-start: 0;
-      margin-block-end: 0;
-      padding-inline-start: 0;
-    }
-
-    .nav__ul__items {
-      display: inline-block;
-      transition: transform 0.2s;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-    
-    .nav__ul__items a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 1.2rem;
-      padding: 0.5rem;
-
-      &:hover {
-        color: #006630;
-      }
-    }
-
   }
+  
+  .header__nav__ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+  }
+  
+  .header__nav .nav__ul__items {
+    display: inline-block;
+    transition: transform 0.2s;
 
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .header__nav .nav__ul__items a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+
+    &:hover {
+      color: #006630;
+    }
+  }
+  
+   
   .nav__ul__items-close {
     display: none;
   }
-
+  
   .nav__bar {
     text-decoration: none;
   }
-
+  
   .jam-menu {
     display: none;
   }
-
+  
   .jam-close-circle {
     display: none;
   }
-  
- 
-  
-
-
-  
- 
-  
-  
- 
-  
- 
-  
- 

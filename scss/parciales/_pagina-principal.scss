@@ -1,6 +1,6 @@
- /*PAGINA PRINCIPAL*/
-  
- .seguros__generales {
+/*PAGINA PRINCIPAL*/
+
+.seguros__generales {
     width: 100%;
     background-image: url("../images/hero-image.jpg");
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     top: -20px;
     min-height: 100vh;
 
-    &__opacidad {
+    .seguros__generales__opacidad {
       width: 100%;
       min-height: 100vh;
       display: flex;
@@ -19,7 +19,6 @@
       align-items: center;
       text-align: center;
       background-color: rgba(0, 0, 0, 0.7);
-    
       gap: 1rem;
     }
     
@@ -35,7 +34,7 @@
       color: #fff;
     }
     
-    &__boton button{
+    &__boton button {
       background-color: $color-principal;
       border-radius: 0.50rem;
       color: #fff;
@@ -51,8 +50,8 @@
       }
     }
   }
-
   
+
   .confianza {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -60,28 +59,27 @@
     justify-items: center;
     align-items: center;
     gap: 4rem;
-    
     padding: 1rem;
     margin: 1rem;
-
-    .confianza__titulo {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-
-      & img {
-        width: 400px;
-        height: auto;
-      }
-    }
-    
-    
   }
   
+  .confianza .confianza__titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & img {
+      width: 400px;
+      height: auto;
+    }
+  }
+  
+  
+  
   .titulo__principal {
-    font-size: 2rem;
+    font-size: $step-2;
     color: $color-principal;
     font-weight: bold;
     text-align: center;
@@ -90,13 +88,13 @@
   
   .confianza__texto {
     width: 100%;
-    text-align: justify;
-    font-size: 1rem;
+    text-align: left;
+    font-size: $fluid-1;
   }
   
   .confianza__imagenes p {
     font-size: 1rem;
-    width: 70%; 
+    width: 70%;
   }
   
   .seguridad__item {
@@ -106,7 +104,7 @@
       margin-top: 1rem;
     }
   }
-   
+  
   .asesoramiento__item {
     display: flex;
 
@@ -115,6 +113,7 @@
     }
   }
   
+
   .cotiza__item {
     display: flex;
 
@@ -123,7 +122,7 @@
     }
   }
   
-
+  
   .jam-shield-check-f {
     color: $color-principal;
     font-size: 3rem;
@@ -136,34 +135,32 @@
   
   .jam-pocket-watch-f {
     color: $color-principal;
-    font-size: 3rem; 
+    font-size: 3rem;
   }
-  
   
   .clientes {
     background-color: $color-secundario;
     margin-bottom: 4rem;
+
+    &__titulo h2 {
+      color: $color-principal;
+      font-size: $step-2;
+      font-weight: bold;
+      padding-top: 4rem;
+      text-align: center;
+    }
+    
+    &__testimonios {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1);
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
   }
   
   
-  .clientes__titulo h2 {
-    color: $color-principal;
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 4rem;
-    text-align: center;
-  }
-  
-  
-  .clientes__testimonios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1);
-  
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
   
   .testimonios {
     display: grid;
@@ -175,11 +172,11 @@
     margin: 2rem;
     width: 80%;
     height: auto;
-  
+
     & h4 {
       font-size: 1rem;
       font-weight: bold;
-      color:$color-principal;
+      color: #00bfa6;
       text-align: center;
     }
     
@@ -190,12 +187,13 @@
     }
   }
   
+ 
+  
   .jam-message-alt-writing-f {
-    color: $color-principal;
+    color: #00bfa6;
     font-size: 3rem;
   }
   
- 
   .formulario__titulo {
     width: 100%;
     height: auto;
@@ -203,11 +201,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
-    
+    text-align: center;
+
     & h2 {
       color: $color-principal;
-      font-size: 2rem;
+      font-size: $step-2;
       font-weight: bold;
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
@@ -215,14 +213,13 @@
     }
     
     & p {
-      font-size: 1rem;
-      line-height: 1;
-      margin-bottom: 3rem;
+      font-size: $fluid-1;
+      text-align: left;
     }
+    
   }
   
-
-  
+ 
   .formulario__container {
     display: flex;
     flex-direction: row;
@@ -230,12 +227,11 @@
     align-items: center;
     background-color: $color-secundario;
     font-weight: bold;
-    width:100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
     border-radius: 0.50rem;
-  
     padding: 1rem;
   }
   
@@ -257,8 +253,7 @@
 
     &:hover {
       transform: scale(1.1);
-    }    
-    
+    }
   }
   
-  
+ 

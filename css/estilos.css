@@ -1,3 +1,4 @@
+/*FLUID STYLES*/
 /*RESETEO*/
 html {
   box-sizing: border-box;
@@ -132,7 +133,7 @@ img {
   transition: transform 0.2s;
 }
 
-.footer__logotipo span:hover {
+.footer__span:hover {
   transform: scale(1.1);
 }
 
@@ -189,7 +190,7 @@ img {
   min-height: 100vh;
 }
 
-.seguros__generales__opacidad {
+.seguros__generales .seguros__generales__opacidad {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -254,7 +255,7 @@ img {
 }
 
 .titulo__principal {
-  font-size: 2rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   color: #00bfa6;
   font-weight: bold;
   text-align: center;
@@ -263,8 +264,8 @@ img {
 
 .confianza__texto {
   width: 100%;
-  text-align: justify;
-  font-size: 1rem;
+  text-align: left;
+  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
 }
 
 .confianza__imagenes p {
@@ -318,7 +319,7 @@ img {
 
 .clientes__titulo h2 {
   color: #00bfa6;
-  font-size: 2rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   font-weight: bold;
   padding-top: 4rem;
   text-align: center;
@@ -370,12 +371,12 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
 }
 
 .formulario__titulo h2 {
   color: #00bfa6;
-  font-size: 2rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -383,9 +384,8 @@ img {
 }
 
 .formulario__titulo p {
-  font-size: 1rem;
-  line-height: 1;
-  margin-bottom: 3rem;
+  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
+  text-align: left;
 }
 
 .formulario__container {
@@ -439,11 +439,6 @@ img {
   margin-top: -40px;
 }
 
-.jam-users {
-  color: #00bfa6;
-  font-size: 3rem;
-}
-
 .conocenos__titulo {
   color: #00bfa6;
   font-size: 3rem;
@@ -451,9 +446,14 @@ img {
   text-align: center;
 }
 
+.conocenos .jam-users {
+  color: #00bfa6;
+  font-size: 3rem;
+}
+
 .nosotros h2 {
   color: #00bfa6;
-  font-size: 2rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   font-weight: bold;
   margin: 2rem auto;
   text-align: center;
@@ -461,9 +461,9 @@ img {
 
 .nosotros p {
   width: 100%;
-  font-size: 1rem;
+  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: left;
   margin: 2rem auto;
 }
 
@@ -474,68 +474,6 @@ img {
   padding-bottom: 3rem;
 }
 
-.formulario__titulo {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-}
-
-.formulario__titulo h2 {
-  color: #00bfa6;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.formulario__titulo p {
-  font-size: 1rem;
-  line-height: 1;
-  margin-bottom: 3rem;
-}
-
-.formulario__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #e6fff7;
-  font-weight: bold;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3rem;
-  border-radius: 0.50rem;
-  padding: 1rem;
-}
-
-.formulario__seleccion__seguros {
-  border-radius: 0.50rem;
-  border-color: #00bfa6;
-  font-family: 'Raleway', sans-serif;
-  cursor: pointer;
-}
-
-.boton__cotizar {
-  background-color: #00bfa6;
-  border: 0;
-  border-radius: 0.50rem;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.boton__cotizar:hover {
-  transform: scale(1.1);
-}
-
-/*SECCION COTIZAR DE LA PAGINA + PAGINA COTIZAR*/
 .cotizar__titulo {
   display: flex;
   justify-content: center;
@@ -569,7 +507,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
 }
 
 .formulario__titulo h2 {
@@ -582,9 +520,8 @@ img {
 }
 
 .formulario__titulo p {
-  font-size: 1rem;
-  line-height: 1;
-  margin-bottom: 3rem;
+  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
+  text-align: left;
 }
 
 .formulario__container {
@@ -660,15 +597,15 @@ img {
 
 .servicios__subtitulo__texto h2 {
   color: #00bfa6;
-  font-size: 2rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   text-align: center;
   margin-top: 3rem;
 }
 
 .servicios__subtitulo__texto p {
   width: 70%;
-  font-size: 1rem;
-  text-align: justify;
+  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
+  text-align: left;
 }
 
 .jam-arrow-square-down-f {
@@ -725,8 +662,8 @@ img {
 }
 
 .servicios__imagenes div p {
-  text-align: justify;
-  font-size: 1rem;
+  text-align: left;
+  font-size: clamp(0.91rem, calc(0.89rem + 0.09vw), 0.96rem);
 }
 
 .servicios__imagenes div img {
@@ -774,16 +711,16 @@ img {
 
 .aseguradoras__titulo h2 {
   color: #00bfa6;
-  font-size: 2rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   font-weight: bold;
   text-align: center;
   grid-area: ele1;
 }
 
 .aseguradoras__titulo p {
-  text-align: justify;
+  text-align: left;
   width: 80%;
-  font-size: 1rem;
+  font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
   margin-bottom: 2rem;
 }
 
@@ -842,7 +779,7 @@ img {
 .politica__seguridad__titulo h1 {
   color: #00bfa6;
   padding: 1rem;
-  font-size: 2.3rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
 }
 
 .politica__seguridad__titulo img {
@@ -852,11 +789,12 @@ img {
 }
 
 .politica__seguridad p {
-  font-size: 1.3rem;
+  font-size: clamp(1.09rem, calc(1.06rem + 0.19vw), 1.2rem);
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  text-align: left;
 }
 
 /*PAGINA TERMINOS Y CONDICIONES*/
@@ -867,7 +805,7 @@ img {
 .terminos__condiciones__titulo h1 {
   color: #00bfa6;
   padding: 1rem;
-  font-size: 2.3rem;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
 }
 
 .terminos__condiciones__titulo img {
@@ -877,12 +815,12 @@ img {
 }
 
 .terminos__condiciones p {
-  font-size: 1.3rem;
+  font-size: clamp(1.09rem, calc(1.06rem + 0.19vw), 1.2rem);
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3rem;
-  text-align: justify;
+  margin-bottom: 5rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 64.625em) {
@@ -1001,10 +939,12 @@ img {
   /*PAGINA POLITICA Y SEGURIDAD*/
   .politica__seguridad P {
     width: 100%;
+    padding: 1rem;
   }
   /*PAGINA TERMINOS Y CONDICIONES*/
   .terminos__condiciones p {
     width: 100%;
+    padding: 1rem;
   }
 }
 
