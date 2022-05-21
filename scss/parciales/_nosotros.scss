@@ -26,7 +26,15 @@
   }
   
 
-  .nosotros h2 {
+  .nosotros {
+    max-width: 960px;
+    min-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+  }
+
+  .nosotros__texto h2 {
     color: $color-principal;
     font-size: $step-2;
     font-weight: bold;
@@ -34,56 +42,22 @@
     text-align: center;
   }
   
-  .nosotros p {
+  .nosotros__texto p {
     width: 100%;
     font-size: $fluid-1;
     margin-top: 3rem;
     text-align: left;
   }
   
-  .nosotros img {
-    width: 500px;
-    object-fit: contain;
-    border-radius: 0.50rem;
-    padding-bottom: 2rem;
-    margin-top: 3rem;
-  }
-
-  .bg-color-secundario {
-    padding-top: 6rem;
-    background-color: $color-secundario;
-  }
-
-
-  .poliza {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 6rem 0;
-    gap: 6rem;
-    padding: 1rem;
-    background-color: $color-secundario;
-
-    & img {
-      width: 250px;
-      border-radius: 50%;
-    }
-
-    & h3 {
-      color: $color-principal;
-      font-weight: bold;
-      padding-bottom: 1rem;
-      font-size: $step-1;
-      text-align: center;
-    }
-  }
 
   .redes-sociales {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 6rem 0;
+    margin: 3rem 0;
     gap: 6rem;
+    padding: 2rem;
+    background-color: $color-secundario;
 
     & h3 {
       color: $color-principal;
@@ -95,7 +69,26 @@
 
     & img {
       width: 400px;
-      border-radius: 50%;
+    }
+  }
+  .poliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    gap: 6rem;
+    padding: 2rem;
+
+    & h3 {
+      color: $color-principal;
+      font-weight: bold;
+      padding-bottom: 1rem;
+      font-size: $step-1;
+      text-align: center;
+    }
+
+    & img {
+      width: 350px;
     }
   }
 
