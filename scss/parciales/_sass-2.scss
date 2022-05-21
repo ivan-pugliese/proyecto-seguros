@@ -1,0 +1,104 @@
+/*MAP*/
+
+$flex: (
+    display: flex,
+    flex-direction:column,
+    justify-content:center,
+    aling-items:center
+);
+
+/*PAGINA PRINCIPAL MAP*/
+.seguros__generales__opacidad {
+    display: map-get($flex, display);
+    flex-direction: map-get($flex, flex-direction);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+.confianza {
+    display: map-get($flex, display);
+    flex-direction: map-get($flex, flex-direction);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+.confianza .confianza__titulo {
+    display: map-get($flex, display);
+    flex-direction: map-get($flex, flex-direction);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+.destacamos {
+    display: map-get($flex, display);
+    flex-direction: map-get($flex, flex-direction);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+/*PAGINA NOSOTROS MAP*/
+
+.conocenos {
+    display: map-get($flex, display);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+.redes-sociales {
+    display: map-get($flex, display);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+.poliza {
+    display: map-get($flex, display);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+/*PAGINA COTIZAR MAP*/
+
+.cotizar__titulo {
+    display: map-get($flex, display);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+.formulario__titulo {
+    display: map-get($flex, display);
+    flex-direction: map-get($flex, flex-direction);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center); 
+}
+
+.formulario__container {
+    display: map-get($flex, display);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+/*PAGINA SERVICIOS MAP*/ 
+
+.servicios__titulo {
+    display: map-get($flex, display);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center);
+}
+
+.servicios__subtitulo__texto {
+    display: map-get($flex, display);
+    flex-direction: map-get($flex, flex-direction);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center); 
+}
+
+/*MEDIA QUERYS MAP*/ 
+
+/*pagina cotizar*/
+.formulario__container {
+    display: map-get($flex, display);
+    flex-direction: map-get($flex, flex-direction);
+    justify-content: map-get($flex, center);
+    align-items: map-get($flex, center); 
+}
+

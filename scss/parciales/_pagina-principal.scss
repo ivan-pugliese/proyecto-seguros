@@ -98,10 +98,39 @@
       width: 300px;
       height: auto;
     }
-  }
+   }
   }
 
   
+  .destacamos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $color-secundario;
+
+    & h2 {
+      color: $color-principal;
+      font-weight: bold;
+      font-size: $step-2;
+      margin-top: 4rem;
+      margin-bottom: 6rem;
+    }
+  }
+ 
+  .col h4 {
+    color: $color-principal;
+    font-weight: bold;
+    margin: 2rem;
+  }
+
+  .col p {
+    margin-bottom: 8rem;
+  }
+
+
+
   .clientes {
     margin-bottom: 4rem;
 
@@ -151,32 +180,7 @@
   }
   
 
-  .destacamos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: $color-secundario;
-
-    & h2 {
-      color: $color-principal;
-      font-weight: bold;
-      font-size: $step-2;
-      margin-top: 4rem;
-      margin-bottom: 6rem;
-    }
-  }
- 
-  .col h4 {
-    color: $color-principal;
-    font-weight: bold;
-    margin: 2rem;
-  }
-
-  .col p {
-    margin-bottom: 8rem;
-  }
+  
 
   .jam { //Iconos Jam en General
     color: $color-principal;

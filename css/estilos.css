@@ -22,6 +22,72 @@ img {
   height: auto;
 }
 
+/*MAP*/
+/*PAGINA PRINCIPAL MAP*/
+.seguros__generales__opacidad {
+  display: flex;
+  flex-direction: column;
+}
+
+.confianza {
+  display: flex;
+  flex-direction: column;
+}
+
+.confianza .confianza__titulo {
+  display: flex;
+  flex-direction: column;
+}
+
+.destacamos {
+  display: flex;
+  flex-direction: column;
+}
+
+/*PAGINA NOSOTROS MAP*/
+.conocenos {
+  display: flex;
+}
+
+.redes-sociales {
+  display: flex;
+}
+
+.poliza {
+  display: flex;
+}
+
+/*PAGINA COTIZAR MAP*/
+.cotizar__titulo {
+  display: flex;
+}
+
+.formulario__titulo {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__container {
+  display: flex;
+}
+
+/*PAGINA SERVICIOS MAP*/
+.servicios__titulo {
+  display: flex;
+}
+
+.servicios__subtitulo__texto {
+  display: flex;
+  flex-direction: column;
+}
+
+/*MEDIA QUERYS MAP*/
+/*pagina cotizar*/
+.formulario__container {
+  display: flex;
+  flex-direction: column;
+}
+
 /*HEADER GENERAL*/
 .header {
   position: sticky;
@@ -279,6 +345,33 @@ img {
   height: auto;
 }
 
+.destacamos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e6fff7;
+}
+
+.destacamos h2 {
+  color: #00bfa6;
+  font-weight: bold;
+  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.col h4 {
+  color: #00bfa6;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.col p {
+  margin-bottom: 8rem;
+}
+
 .clientes {
   margin-bottom: 4rem;
 }
@@ -324,33 +417,6 @@ img {
   font-size: 1rem;
   text-align: center;
   padding-top: 1rem;
-}
-
-.destacamos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #e6fff7;
-}
-
-.destacamos h2 {
-  color: #00bfa6;
-  font-weight: bold;
-  font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-}
-
-.col h4 {
-  color: #00bfa6;
-  font-weight: bold;
-  margin: 2rem;
-}
-
-.col p {
-  margin-bottom: 8rem;
 }
 
 .jam {
@@ -448,7 +514,7 @@ img {
 }
 
 .poliza img {
-  width: 350px;
+  width: 250px;
 }
 
 .cotizar__titulo {
