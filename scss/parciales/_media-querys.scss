@@ -113,11 +113,15 @@
     }
 
     /*PAGINA SERVICIOS*/
+    
+    .servicios__presentacion {
+      flex-direction: column;
+    }
+
     .servicios__imagenes {
       display: flex;
       flex-direction: column;
     }
-
 
     /*PAGINA ASEGURADORAS*/
     .aseguradoras__titulo {
