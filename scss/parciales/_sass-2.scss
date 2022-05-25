@@ -7,7 +7,7 @@ $flex: (
     aling-items:center
 );
 
-/*PAGINA PRINCIPAL MAP*/
+/*PAGINA PRINCIPAL*/
 .seguros__generales__opacidad {
     display: map-get($flex, display);
     flex-direction: map-get($flex, flex-direction);
@@ -36,7 +36,7 @@ $flex: (
     align-items: map-get($flex, center);
 }
 
-/*PAGINA NOSOTROS MAP*/
+/*PAGINA NOSOTROS*/
 
 .conocenos {
     display: map-get($flex, display);
@@ -56,7 +56,7 @@ $flex: (
     align-items: map-get($flex, center);
 }
 
-/*PAGINA COTIZAR MAP*/
+/*PAGINA COTIZAR*/
 
 .cotizar__titulo {
     display: map-get($flex, display);
@@ -77,7 +77,7 @@ $flex: (
     align-items: map-get($flex, center);
 }
 
-/*PAGINA SERVICIOS MAP*/ 
+/*PAGINA SERVICIOS*/ 
 
 .servicios__titulo {
     display: map-get($flex, display);
@@ -92,7 +92,7 @@ $flex: (
     align-items: map-get($flex, center); 
 }
 
-/*MEDIA QUERYS MAP*/ 
+/*MEDIA QUERYS*/ 
 
 /*pagina cotizar*/
 .formulario__container {

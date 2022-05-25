@@ -23,7 +23,7 @@ img {
 }
 
 /*MAP*/
-/*PAGINA PRINCIPAL MAP*/
+/*PAGINA PRINCIPAL*/
 .seguros__generales__opacidad {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ img {
   flex-direction: column;
 }
 
-/*PAGINA NOSOTROS MAP*/
+/*PAGINA NOSOTROS*/
 .conocenos {
   display: flex;
 }
@@ -57,7 +57,7 @@ img {
   display: flex;
 }
 
-/*PAGINA COTIZAR MAP*/
+/*PAGINA COTIZAR*/
 .cotizar__titulo {
   display: flex;
 }
@@ -71,7 +71,7 @@ img {
   display: flex;
 }
 
-/*PAGINA SERVICIOS MAP*/
+/*PAGINA SERVICIOS*/
 .servicios__titulo {
   display: flex;
 }
@@ -81,7 +81,7 @@ img {
   flex-direction: column;
 }
 
-/*MEDIA QUERYS MAP*/
+/*MEDIA QUERYS*/
 /*pagina cotizar*/
 .formulario__container {
   display: flex;
