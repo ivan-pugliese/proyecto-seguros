@@ -1,3 +1,5 @@
+/*PAGINA COTIZAR*/
+
 .cotizar__titulo {
     display: flex;
     justify-content: center;
@@ -32,6 +34,7 @@
     & img {
       width: 600px;
       height: 600px;
+      margin-top: 3.5rem;
       padding-left: 3rem;
     }
   }

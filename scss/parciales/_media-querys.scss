@@ -99,18 +99,25 @@
 
 
     /*PAGINA SOBRE NOSOTROS*/
+
     .nosotros {
       display: flex;
-      flex-direction: column;
-    }
-
-    .poliza {
       flex-direction: column;
     }
 
     .redes-sociales {
       flex-direction: column;
     }
+
+    .poliza {
+      flex-direction: column;
+      gap: 2rem;
+
+      & img {
+        padding-left: 2.3rem;
+      }
+    }
+
 
     /*PAGINA SERVICIOS*/
     
@@ -124,20 +131,24 @@
     }
 
     /*PAGINA ASEGURADORAS*/
+
     .aseguradoras__titulo {
       display: flex;
       flex-direction: column;
     }
+
     .seccion__imagenes {
       display: flex;
       flex-direction: column;
     }
+
     .seccion__imagenes img {
       margin: 2rem;
     }
 
 
     /*PAGINA COTIZAR*/
+
     .container__form-img {
       flex-direction: column;
 
@@ -148,6 +159,7 @@
     }
 
     /*PAGINA POLITICA Y SEGURIDAD*/
+
     .politica__seguridad P {
       width: 100%;
       padding: 1rem;
@@ -155,6 +167,7 @@
 
 
     /*PAGINA TERMINOS Y CONDICIONES*/
+
     .terminos__condiciones p {
       width: 100%;
       padding: 1rem;
