@@ -1037,6 +1037,8 @@ img {
     flex-direction: column;
   }
   .container__form-img img {
+    width: 250px;
+    height: 250px;
     margin: 0;
     padding: 0;
   }
