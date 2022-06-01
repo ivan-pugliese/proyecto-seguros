@@ -8,6 +8,7 @@ $flex: (
 );
 
 /*PAGINA PRINCIPAL*/
+
 .seguros__generales__opacidad {
     display: map-get($flex, display);
     flex-direction: map-get($flex, flex-direction);

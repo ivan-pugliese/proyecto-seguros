@@ -102,6 +102,14 @@
 
     /*PAGINA SOBRE NOSOTROS*/
 
+    .conocenos {
+      flex-direction: column;
+
+      & h1 {
+        margin-bottom: 1rem;
+      }
+    }
+
     .nosotros {
       display: flex;
       flex-direction: column;
@@ -123,6 +131,14 @@
 
     /*PAGINA SERVICIOS*/
     
+    .servicios__titulo {
+      flex-direction: column;
+
+       & h1 {
+        margin-bottom: 1rem;
+      }
+    }
+
     .servicios__presentacion {
       flex-direction: column;
     }
@@ -133,6 +149,14 @@
     }
 
     /*PAGINA ASEGURADORAS*/
+
+    .seccion__titulo {
+      flex-direction: column;
+
+      & h1 {
+        margin-bottom: 1rem;
+      }
+    }
 
     .aseguradoras__titulo {
       display: flex;
@@ -150,6 +174,15 @@
 
 
     /*PAGINA COTIZAR*/
+
+    .cotizar__titulo {
+      flex-direction: column;
+
+      & h1 {
+        margin-bottom: 1rem;
+      }
+    }
+
     .container__form-img {
       flex-direction: column;
 
