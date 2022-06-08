@@ -28,21 +28,21 @@
   
   
   .aseguradoras__titulo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "ele1 ele1"
-   "ele2 ele3";
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-items: center;
+    padding: 1rem;
+    padding-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     & h2 {
       color: #00bfa6;
       font-size: $step-2;
       font-weight: bold;
       text-align: center;
-      grid-area: ele1;
     }
     
     & p {
@@ -53,13 +53,6 @@
       margin-bottom: 2rem;
     }
     
-    & .parrafo1 {
-      grid-area: ele2;
-    }
-    
-    & .parrafo2 {
-      grid-area: ele3;
-    }
   }
   
  

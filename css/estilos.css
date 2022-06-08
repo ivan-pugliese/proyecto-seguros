@@ -553,7 +553,7 @@ img {
 .container__form-img img {
   width: 600px;
   height: 600px;
-  margin-top: 3.5rem;
+  margin-top: 10rem;
   padding-left: 3rem;
 }
 
@@ -773,13 +773,15 @@ img {
 }
 
 .aseguradoras__titulo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "ele1 ele1" "ele2 ele3";
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-items: center;
+  padding: 1rem;
+  padding-top: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aseguradoras__titulo h2 {
@@ -787,7 +789,6 @@ img {
   font-size: clamp(1.89rem, calc(1.73rem + 0.83vw), 2.34rem);
   font-weight: bold;
   text-align: center;
-  grid-area: ele1;
 }
 
 .aseguradoras__titulo p {
@@ -796,14 +797,6 @@ img {
   padding: 1rem;
   font-size: calc( ( (var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp) ));
   margin-bottom: 2rem;
-}
-
-.aseguradoras__titulo .parrafo1 {
-  grid-area: ele2;
-}
-
-.aseguradoras__titulo .parrafo2 {
-  grid-area: ele3;
 }
 
 .aseguradoras__imagenes {
