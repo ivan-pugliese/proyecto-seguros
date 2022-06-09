@@ -71,15 +71,15 @@
                     <form action="https://formsubmit.co/puglieseyasociados1@gmail.com" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombre Completo:</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" name="nombre" class="form-control" id="name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" name="email" class="form-control" id="email" required>
                     </div>
                         <div class="mb-3">
                             <p>Selecciona tu Seguro:</p>
-                            <select class="formulario__seleccion__seguros">
+                            <select name="seguro" class="formulario__seleccion__seguros">
                                 <option value="Seguro de vida">Seguro de vida</option>
                                 <option value="Seguro de auto">Seguro de Auto</option>
                                 <option value="Hogar">Hogar</option>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="coments" class="form-label">Ingrese marca, año y modelo de su auto en caso de haber seleccionado dicho seguro:</label>
-                            <textarea class="form-control" id="coments" rows="3" placeholder="Ingrese marca, año y modelo de su auto o deje un comentario."></textarea>
+                            <textarea name="mensaje" class="form-control" id="coments" rows="3" placeholder="Ingrese marca, año y modelo de su auto o deje un comentario."></textarea>
                         </div>
                         <button type="submit" class="btn boton__cotizar btn-sm">Cotizar</button>
                     </form>
