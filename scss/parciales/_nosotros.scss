@@ -45,7 +45,7 @@
   
   .nosotros__texto p {
     width: 100%;
-    font-size: $fluid-1;
+    font-size: $step--1;
     margin-top: 3rem;
     text-align: left;
   }
@@ -71,6 +71,10 @@
     & img {
       width: 400px;
     }
+
+    & li {
+      font-size: $step--1;
+    }
   }
 
   
@@ -92,6 +96,10 @@
 
     & img {
       width: 250px;
+    }
+
+    & li {
+      font-size: $step--1;
     }
   }
 
