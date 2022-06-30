@@ -143,11 +143,72 @@
       flex-direction: column;
     }
 
-    .servicios__imagenes {
-      display: flex;
+    .seguros__vida {
       flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      & h3 {
+        text-align: center;
+      }
     }
 
+    .seguros__hogar {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      & h3 {
+        text-align: center;
+      }
+    }
+
+    .seguros__auto {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      & h3 {
+        text-align: center;
+      }
+    }
+
+    .seguros__comercio {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      & h3 {
+        text-align: center;
+      }
+    }
+
+    .seguros__praxis {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      & h3 {
+        text-align: center;
+      }
+    }
+
+    .seguros__dispositivos {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      & h3 {
+        text-align: center;
+      }
+    }
+
+    .cotizar {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+    }
+    
     /*PAGINA ASEGURADORAS*/
 
     .seccion__titulo {
@@ -183,16 +244,6 @@
       }
     }
 
-    .container__form-img {
-      flex-direction: column;
-
-      & img {
-        width: 250px;
-        height: 250px;
-        margin:0;
-        padding: 0;
-      }
-    }
 
     /*PAGINA POLITICA Y SEGURIDAD*/
 
@@ -272,7 +323,7 @@
 
     /*PAGINA SOBRE NOSOTROS*/
     .conocenos__titulo {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
     }
     .nosotros__texto h2 {
       font-size: 1.7rem;
@@ -285,22 +336,14 @@
 
     /*FORMULARIO COTIZAR*/
     .cotizar__titulo h1 {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
     }
-    .formulario__titulo h2 {
-      font-size: 1.4rem;
-    }
-    .formulario__titulo p {
-      font-size: 1rem;
-    }
-    .formulario__container {
-      font-size: 0.9rem;
-    }
+   
 
 
     /*PAGINA SERVICIOS*/
     .servicios__titulo h1 {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
     }
     .servicios__subtitulo__texto h2 {
       font-size: 1.7rem;
@@ -315,14 +358,7 @@
     
     /*PAGINA ASEGURADORAS*/
     .seccion__titulo h1 {
-      font-size: 1.7rem;
+      font-size: 2.5rem;
     }
-    .aseguradoras__titulo h2 {
-      font-size: 1.7rem;
-      margin-top: 2rem;
-    }
-    .aseguradoras__titulo p {
-      font-size: 1rem;
-      margin-top: 1rem;
-    }
+   
   }

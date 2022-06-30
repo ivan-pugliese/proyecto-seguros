@@ -36,6 +36,7 @@
     
     &__boton button {
       background-color: $color-principal;
+      border: 1px solid $color-principal;
       border-radius: 0.50rem;
       color: #fff;
       font-size: 1rem;
@@ -97,6 +98,7 @@
     & img {
       width: 300px;
       height: auto;
+      padding-top: 1.5rem;
     }
    }
   }
